@@ -1,0 +1,1012 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula 1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-05 19:20+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: workflows/function.none_permissioncheck.php:61
+msgid "None workflow (no approval)"
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:62
+msgid ""
+"This is like a non-existing workflow. Everything is online immediately after "
+"creation."
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:66
+#: lib/Pdfviewer/Util/Base/Workflow.php:28
+msgid "Initial"
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:66
+msgid "Pseudo-state for content which is just created and not persisted yet."
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:67
+#: lib/Pdfviewer/Util/Base/ListEntries.php:156
+#: lib/Pdfviewer/Util/Base/Workflow.php:31
+msgid "Deferred"
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:67
+#: lib/Pdfviewer/Util/Base/ListEntries.php:157
+msgid ""
+"Content has not been submitted yet or has been waiting, but was rejected."
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:68
+#: lib/Pdfviewer/Util/Base/ListEntries.php:160
+#: lib/Pdfviewer/Util/Base/Workflow.php:34
+msgid "Approved"
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:68
+#: lib/Pdfviewer/Util/Base/ListEntries.php:161
+msgid "Content has been approved and is available online."
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:69
+#: lib/Pdfviewer/Util/Base/Workflow.php:37
+msgid "Deleted"
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:69
+msgid "Pseudo-state for content which has been deleted from the database."
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:75
+#: workflows/function.none_permissioncheck.php:80
+#: templates/admin/document/view.tpl:110
+msgid "Submit"
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:75
+#: workflows/function.none_permissioncheck.php:80
+msgid "Submit content."
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:76
+msgid "Defer"
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:76
+msgid "Defer content for later submission."
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:81
+#: workflows/function.none_permissioncheck.php:86
+msgid "Update"
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:81
+#: workflows/function.none_permissioncheck.php:86
+msgid "Update content."
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:82
+#: workflows/function.none_permissioncheck.php:87
+#: lib/Pdfviewer/Entity/Base/Document.php:740
+#: lib/Pdfviewer/Entity/Base/Document.php:741
+#: templates/admin/document/view.tpl:108 templates/admin/document/delete.tpl:7
+#: templates/admin/document/delete.tpl:20
+msgid "Delete"
+msgstr ""
+
+#: workflows/function.none_permissioncheck.php:82
+#: workflows/function.none_permissioncheck.php:87
+msgid "Delete content permanently."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:36
+msgid "This is a required field."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:37
+msgid "Please enter a valid number in this field."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:38
+msgid ""
+"Please use numbers only in this field. please avoid spaces or other "
+"characters such as dots or commas."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:39
+msgid "Please use letters only (a-z) in this field."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:40
+msgid ""
+"Please use only letters (a-z) or numbers (0-9) only in this field. No spaces "
+"or other characters are allowed."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:41
+msgid "Please enter a valid date."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:42
+msgid "Please enter a valid email address. For example yourname@example.com ."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:43
+msgid "Please enter a valid URL."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:44
+msgid ""
+"Please use this date format: dd/mm/yyyy. For example 17/03/2010 for the 17th "
+"of March, 2010."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:45
+msgid "Please enter a valid $ amount. For example $100.00 ."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:46
+msgid "Please make a selection."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:47
+msgid "Please select one of the above options."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:50
+msgid "This value must not contain spaces."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:51
+msgid "Please select a valid html colour code."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:52
+msgid "Please select an allowed file type."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:53
+#: templates/plugins/function.pdfviewerValidationError.php:55
+#: templates/plugins/function.pdfviewerValidationError.php:57
+msgid "Please select a value in the past."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerValidationError.php:54
+#: templates/plugins/function.pdfviewerValidationError.php:56
+#: templates/plugins/function.pdfviewerValidationError.php:58
+msgid "Please select a value in the future."
+msgstr ""
+
+#: templates/plugins/function.pdfviewerObjectTypeSelector.php:30
+#: templates/search/options.tpl:5 templates/block/itemlist_modify.tpl:5
+msgid "Documents"
+msgstr ""
+
+#: templates/plugins/function.pdfviewerTemplateHeaders.php:31
+#, php-format
+msgid "%1$s: missing parameter '%2$s'"
+msgstr ""
+
+#: templates/plugins/function.pdfviewerTemplateSelector.php:30
+#: templates/block/itemlist_modify.tpl:52
+msgid "Only item titles"
+msgstr ""
+
+#: templates/plugins/function.pdfviewerTemplateSelector.php:31
+#: templates/block/itemlist_modify.tpl:53
+msgid "With description"
+msgstr ""
+
+#: templates/plugins/function.pdfviewerTemplateSelector.php:32
+#: templates/contenttype/itemlist_edit.tpl:68
+#: templates/block/itemlist_modify.tpl:54
+#: templates/block/itemlist_modify.tpl:59
+msgid "Custom template"
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Base/Edit.php:245
+#: lib/Pdfviewer/Controller/Base/Admin.php:267
+msgid "Error! Could not determine workflow actions."
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Base/Edit.php:298
+#: lib/Pdfviewer/Form/Handler/Admin/Base/Edit.php:330
+#: lib/Pdfviewer/Controller/Base/Admin.php:258
+#: lib/Pdfviewer/Controller/Base/External.php:88
+msgid "No such item."
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Base/Edit.php:476
+msgid "Done! Item created."
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Base/Edit.php:478
+msgid "Error! Creation attempt failed."
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Base/Edit.php:483
+#: lib/Pdfviewer/Controller/Base/Admin.php:400
+msgid "Done! Item updated."
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Base/Edit.php:485
+msgid "Error! Update attempt failed."
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Base/Edit.php:490
+#: lib/Pdfviewer/Controller/Base/Admin.php:293
+#: lib/Pdfviewer/Controller/Base/Admin.php:398
+msgid "Done! Item deleted."
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Base/Edit.php:492
+msgid "Error! Deletion attempt failed."
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Document/Base/Edit.php:178
+msgid "Done! Document created."
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Document/Base/Edit.php:180
+#: lib/Pdfviewer/Form/Handler/Admin/Document/Base/Edit.php:187
+msgid "Done! Document updated."
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Document/Base/Edit.php:184
+msgid "Done! Document deleted."
+msgstr ""
+
+#: lib/Pdfviewer/Form/Handler/Admin/Document/Base/Edit.php:213
+#: lib/Pdfviewer/Controller/Base/Admin.php:390
+#, php-format
+msgid ""
+"Sorry, but an unknown error occured during the %s action. Please apply the "
+"changes again!"
+msgstr ""
+
+#: lib/Pdfviewer/Form/Plugin/Base/ColourInput.php:96
+msgid "Close"
+msgstr ""
+
+#: lib/Pdfviewer/Form/Plugin/Base/ColourInput.php:140
+msgid "Error! Invalid colour."
+msgstr ""
+
+#: lib/Pdfviewer/ContentType/Base/Item.php:52
+msgid "Pdfviewer detail view"
+msgstr ""
+
+#: lib/Pdfviewer/ContentType/Base/Item.php:64
+msgid "Display or link a single Pdfviewer object."
+msgstr ""
+
+#: lib/Pdfviewer/ContentType/Base/Item.php:119
+msgid "No item selected."
+msgstr ""
+
+#: lib/Pdfviewer/ContentType/Base/ItemList.php:90
+#: lib/Pdfviewer/Block/Base/ItemList.php:41
+msgid "Pdfviewer list view"
+msgstr ""
+
+#: lib/Pdfviewer/ContentType/Base/ItemList.php:102
+#: lib/Pdfviewer/Block/Base/ItemList.php:42
+msgid "Display list of Pdfviewer objects."
+msgstr ""
+
+#: lib/Pdfviewer/Base/Installer.php:39 lib/Pdfviewer/Base/Installer.php:114
+msgid "Doctrine Exception: "
+msgstr ""
+
+#: lib/Pdfviewer/Base/Installer.php:41
+#, php-format
+msgid ""
+"An error was encountered while creating the tables for the %s extension."
+msgstr ""
+
+#: lib/Pdfviewer/Base/Installer.php:43
+msgid ""
+"Please enable the development mode by editing the /config/config.php file in "
+"order to reveal the error details."
+msgstr ""
+
+#: lib/Pdfviewer/Base/Installer.php:107
+#, php-format
+msgid ""
+"An error was encountered while removing stored object workflows for the %s "
+"extension."
+msgstr ""
+
+#: lib/Pdfviewer/Base/Installer.php:116
+#, php-format
+msgid ""
+"An error was encountered while dropping the tables for the %s extension."
+msgstr ""
+
+#: lib/Pdfviewer/Base/Installer.php:133
+#, php-format
+msgid "The upload directories at [%s] can be removed manually."
+msgstr ""
+
+#: lib/Pdfviewer/Base/Installer.php:206
+msgid ""
+"Sorry, but an unknown error occured during example data creation. Possibly "
+"not all data could be created properly!"
+msgstr ""
+
+#: lib/Pdfviewer/Base/UploadHandler.php:97
+msgid "Error! Could not move your file to the destination folder."
+msgstr ""
+
+#: lib/Pdfviewer/Base/UploadHandler.php:125
+msgid "Error! No file found."
+msgstr ""
+
+#: lib/Pdfviewer/Base/UploadHandler.php:137
+msgid ""
+"Error! This file type is not allowed. Please choose another file format."
+msgstr ""
+
+#: lib/Pdfviewer/Base/UploadHandler.php:147
+#, php-format
+msgid "Error! Your file is too big. Please keep it smaller than %s kilobytes."
+msgstr ""
+
+#: lib/Pdfviewer/Base/UploadHandler.php:151
+#, php-format
+msgid "Error! Your file is too big. Please keep it smaller than %s megabytes."
+msgstr ""
+
+#: lib/Pdfviewer/Base/UploadHandler.php:160
+msgid "Error! This file type seems not to be a valid image."
+msgstr ""
+
+#: lib/Pdfviewer/Base/Version.php:30
+msgid "Pdfviewer"
+msgstr ""
+
+#: lib/Pdfviewer/Base/Version.php:32
+msgid "Pdfviewer module generated by ModuleStudio 0.6.0."
+msgstr ""
+
+#. ! url version of name, should be in lowercase without space
+#: lib/Pdfviewer/Base/Version.php:34
+msgid "pdfviewer"
+msgstr ""
+
+#: lib/Pdfviewer/Block/Base/ItemList.php:37
+msgid ""
+"Notice: This block will not be displayed until you activate the Pdfviewer "
+"module."
+msgstr ""
+
+#: lib/Pdfviewer/Block/Base/ItemList.php:150
+msgid "Pdfviewer items"
+msgstr ""
+
+#: lib/Pdfviewer/Util/Base/ListEntries.php:164
+msgid "All except deferred"
+msgstr ""
+
+#: lib/Pdfviewer/Util/Base/ListEntries.php:165
+msgid "Shows all items except these which are deferred"
+msgstr ""
+
+#: lib/Pdfviewer/Util/Base/ListEntries.php:168
+msgid "All except approved"
+msgstr ""
+
+#: lib/Pdfviewer/Util/Base/ListEntries.php:169
+msgid "Shows all items except these which are approved"
+msgstr ""
+
+#: lib/Pdfviewer/Util/Base/View.php:211
+msgid "Bytes"
+msgstr ""
+
+#: lib/Pdfviewer/Util/Base/View.php:214
+msgid "KB"
+msgstr ""
+
+#: lib/Pdfviewer/Util/Base/View.php:218
+msgid "MB"
+msgstr ""
+
+#: lib/Pdfviewer/Util/Base/View.php:222
+msgid "GB"
+msgstr ""
+
+#: lib/Pdfviewer/Util/Base/Controller.php:167
+#, php-format
+msgid ""
+"The upload directory \"%s\" does not exist and could not be created. Try to "
+"create it yourself and make sure that this folder is accessible via the web "
+"and writable by the webserver."
+msgstr ""
+
+#: lib/Pdfviewer/Util/Base/Controller.php:173
+#, php-format
+msgid ""
+"Warning! The upload directory at \"%s\" exists but is not writable by the "
+"webserver."
+msgstr ""
+
+#: lib/Pdfviewer/Util/Base/Controller.php:184
+#, php-format
+msgid "Warning! Could not write the .htaccess file at \"%s\"."
+msgstr ""
+
+#: lib/Pdfviewer/Entity/Validator/Base/Document.php:31
+#, php-format
+msgid "Error! Field value may only contain digits (%s)."
+msgstr ""
+
+#: lib/Pdfviewer/Entity/Validator/Base/Document.php:35
+#: lib/Pdfviewer/Entity/Validator/Base/Document.php:43
+#: lib/Pdfviewer/Entity/Validator/Base/Document.php:51
+#, php-format
+msgid "Error! Length of field value must not be higher than %2$s (%1$s)."
+msgstr ""
+
+#: lib/Pdfviewer/Entity/Validator/Base/Document.php:39
+#: lib/Pdfviewer/Entity/Validator/Base/Document.php:47
+#: lib/Pdfviewer/Entity/Validator/Base/Document.php:55
+#, php-format
+msgid "Error! Field value must not be empty (%s)."
+msgstr ""
+
+#: lib/Pdfviewer/Entity/Validator/Base/Document.php:59
+#: lib/Pdfviewer/Entity/Validator/Base/Document.php:63
+#, php-format
+msgid "Error! Field value must be a valid datetime (%s)."
+msgstr ""
+
+#: lib/Pdfviewer/Entity/Base/Document.php:649
+msgid "Error! Could not load the associated workflow."
+msgstr ""
+
+#: lib/Pdfviewer/Entity/Base/Document.php:725
+#: lib/Pdfviewer/Entity/Base/Document.php:726
+msgid "Edit"
+msgstr ""
+
+#: lib/Pdfviewer/Entity/Base/Document.php:731
+msgid "Reuse for new item"
+msgstr ""
+
+#: lib/Pdfviewer/Entity/Base/Document.php:732
+msgid "Reuse"
+msgstr ""
+
+#: lib/Pdfviewer/Entity/Base/Document.php:903
+msgid "Error! Could not remove stored workflow. Deletion has been aborted."
+msgstr ""
+
+#: lib/Pdfviewer/Api/Base/Search.php:121
+msgid "Item"
+msgstr ""
+
+#: lib/Pdfviewer/Api/Base/Search.php:135
+msgid "Error! Could not save the search results."
+msgstr ""
+
+#: lib/Pdfviewer/Api/Base/Mailz.php:32
+msgid "3 newest documents"
+msgstr ""
+
+#: lib/Pdfviewer/Api/Base/Mailz.php:33
+msgid "A list of the three newest documents."
+msgstr ""
+
+#: lib/Pdfviewer/Api/Base/Mailz.php:38
+msgid "3 random documents"
+msgstr ""
+
+#: lib/Pdfviewer/Api/Base/Mailz.php:39
+msgid "A list of three random documents."
+msgstr ""
+
+#: lib/Pdfviewer/Api/Base/User.php:30
+msgid "Backend"
+msgstr ""
+
+#: lib/Pdfviewer/Api/Base/User.php:31
+msgid "Switch to administration area."
+msgstr ""
+
+#: lib/Pdfviewer/Api/Base/Admin.php:30
+msgid "Frontend"
+msgstr ""
+
+#: lib/Pdfviewer/Api/Base/Admin.php:31
+msgid "Switch to user area."
+msgstr ""
+
+#: lib/Pdfviewer/Api/Base/Account.php:61
+msgid "Newsletter"
+msgstr ""
+
+#: lib/Pdfviewer/Controller/Base/Admin.php:255
+#: lib/Pdfviewer/Controller/Base/External.php:81
+msgid "Error! Invalid identifier received."
+msgstr ""
+
+#: lib/Pdfviewer/Controller/Base/Admin.php:277
+msgid "Error! It is not allowed to delete this entity."
+msgstr ""
+
+#: templates/external/document/find.tpl:5
+#: templates/external/document/find.tpl:37
+msgid "Search and select document"
+msgstr ""
+
+#: templates/external/document/find.tpl:40
+msgid "Paste as"
+msgstr ""
+
+#: templates/external/document/find.tpl:42
+msgid "Link to the document"
+msgstr ""
+
+#: templates/external/document/find.tpl:43
+msgid "ID of document"
+msgstr ""
+
+#: templates/external/document/find.tpl:49
+#: templates/external/document/select.tpl:14
+#: templates/admin/document/display.tpl:4 templates/admin/document/edit.tpl:30
+msgid "Document"
+msgstr ""
+
+#: templates/external/document/find.tpl:63
+#: templates/external/document/select.tpl:21
+#: templates/contenttype/itemlist_document_display_description.tpl:8
+msgid "No entries found."
+msgstr ""
+
+#: templates/external/document/find.tpl:70
+#: templates/external/document/select.tpl:27
+#: templates/admin/document/view_quickNav.tpl:26
+#: templates/user/document/view_quickNav.tpl:26
+msgid "Sort by"
+msgstr ""
+
+#: templates/external/document/find.tpl:72
+#: templates/external/document/select.tpl:29
+#: templates/admin/document/view_quickNav.tpl:29
+#: templates/user/document/view_quickNav.tpl:29
+msgid "Id"
+msgstr ""
+
+#: templates/external/document/find.tpl:73
+#: templates/external/document/select.tpl:30
+#: templates/admin/document/view_quickNav.tpl:13
+#: templates/admin/document/view_quickNav.tpl:30
+#: templates/admin/document/view.csv:3
+#: templates/user/document/view_quickNav.tpl:13
+#: templates/user/document/view_quickNav.tpl:30
+#: templates/user/document/view.csv:3
+msgid "Workflow state"
+msgstr ""
+
+#: templates/external/document/find.tpl:74
+#: templates/external/document/select.tpl:31
+#: templates/admin/document/view_quickNav.tpl:31
+#: templates/admin/document/view.tpl:48 templates/admin/document/edit.tpl:33
+#: templates/admin/document/view.csv:3
+#: templates/user/document/view_quickNav.tpl:31
+#: templates/user/document/view.csv:3 templates/user/document/view.tpl.org:42
+msgid "Title"
+msgstr ""
+
+#: templates/external/document/find.tpl:75
+#: templates/external/document/select.tpl:32
+#: templates/admin/document/display.tpl:14
+#: templates/admin/document/view_quickNav.tpl:32
+#: templates/admin/document/view.tpl:51 templates/admin/document/edit.tpl:43
+#: templates/admin/document/view.csv:3
+#: templates/user/document/view_quickNav.tpl:32
+#: templates/user/document/view.csv:3 templates/user/document/view.tpl.org:45
+msgid "Datei"
+msgstr ""
+
+#: templates/external/document/find.tpl:76
+#: templates/external/document/select.tpl:33
+#: templates/admin/document/display.tpl:23
+#: templates/admin/document/view_quickNav.tpl:33
+#: templates/admin/document/edit.tpl:71 templates/admin/document/view.csv:3
+#: templates/user/document/view_quickNav.tpl:33
+#: templates/user/document/view.csv:3 templates/user/document/view.tpl.org:48
+msgid "Begindate"
+msgstr ""
+
+#: templates/external/document/find.tpl:77
+#: templates/external/document/select.tpl:34
+#: templates/admin/document/display.tpl:25
+#: templates/admin/document/view_quickNav.tpl:34
+#: templates/admin/document/edit.tpl:81 templates/admin/document/view.csv:3
+#: templates/user/document/view_quickNav.tpl:34
+#: templates/user/document/view.csv:3 templates/user/document/view.tpl.org:51
+msgid "Enddate"
+msgstr ""
+
+#: templates/external/document/find.tpl:78
+#: templates/external/document/select.tpl:35
+#: templates/admin/document/view_quickNav.tpl:35
+#: templates/user/document/view_quickNav.tpl:35
+msgid "Creation date"
+msgstr ""
+
+#: templates/external/document/find.tpl:79
+#: templates/external/document/select.tpl:36
+#: templates/admin/document/view_quickNav.tpl:36
+#: templates/user/document/view_quickNav.tpl:36
+msgid "Creator"
+msgstr ""
+
+#: templates/external/document/find.tpl:80
+#: templates/external/document/select.tpl:37
+#: templates/admin/document/view_quickNav.tpl:37
+#: templates/user/document/view_quickNav.tpl:37
+msgid "Update date"
+msgstr ""
+
+#: templates/external/document/find.tpl:83
+#: templates/external/document/select.tpl:40
+#: templates/admin/document/view_quickNav.tpl:40
+#: templates/user/document/view_quickNav.tpl:40
+msgid "ascending"
+msgstr ""
+
+#: templates/external/document/find.tpl:84
+#: templates/external/document/select.tpl:41
+#: templates/admin/document/view_quickNav.tpl:41
+#: templates/user/document/view_quickNav.tpl:41
+msgid "descending"
+msgstr ""
+
+#: templates/external/document/find.tpl:89
+#: templates/admin/document/view_quickNav.tpl:48
+#: templates/user/document/view_quickNav.tpl:48
+msgid "Page size"
+msgstr ""
+
+#: templates/external/document/find.tpl:102
+#: templates/external/document/select.tpl:46
+msgid "Search for"
+msgstr ""
+
+#: templates/external/document/find.tpl:104
+#: templates/external/document/select.tpl:48
+msgid "Filter"
+msgstr ""
+
+#: templates/external/document/find.tpl:110
+msgid "Change selection"
+msgstr ""
+
+#: templates/external/document/find.tpl:111
+#: templates/admin/document/edit.tpl:132
+#: templates/admin/document/delete.tpl:22
+msgid "Cancel"
+msgstr ""
+
+#: templates/external/document/select.tpl:4
+msgid "Document information"
+msgstr ""
+
+#: templates/admin/document/display.tpl:8
+msgid "Details"
+msgstr ""
+
+#: templates/admin/document/display.tpl:9 templates/admin/document/view.tpl:53
+#: templates/admin/document/view.tpl:80
+#: templates/user/document/view.tpl.org:53
+#: templates/user/document/view.tpl.org:86
+msgid "Actions"
+msgstr ""
+
+#: templates/admin/document/display.tpl:19
+#: templates/admin/document/view.tpl:71 templates/admin/document/edit.tpl:60
+#: templates/user/document/view.tpl.org:71
+msgid "Download"
+msgstr ""
+
+#: templates/admin/document/view.rss:11 templates/admin/document/view.atom:4
+#: templates/user/document/view.rss:11 templates/user/document/view.atom:4
+msgid "Latest documents"
+msgstr ""
+
+#: templates/admin/document/view.rss:12 templates/admin/document/view.atom:5
+#: templates/user/document/view.rss:12 templates/user/document/view.atom:5
+msgid "A direct feed showing the list of documents"
+msgstr ""
+
+#: templates/admin/document/view_quickNav.tpl:6
+#: templates/user/document/view_quickNav.tpl:6
+msgid "Quick navigation"
+msgstr ""
+
+#: templates/admin/document/view_quickNav.tpl:11
+#: templates/user/document/view_quickNav.tpl:11
+#: templates/block/itemlist_modify.tpl:11
+msgid "All"
+msgstr ""
+
+#: templates/admin/document/view_quickNav.tpl:22
+#: templates/user/document/view_quickNav.tpl:22
+msgid "Search"
+msgstr ""
+
+#: templates/admin/document/view_quickNav.tpl:60
+#: templates/user/document/view_quickNav.tpl:60
+msgid "OK"
+msgstr ""
+
+#: templates/admin/document/include_displayItemListMany.tpl:16
+#: templates/admin/document/include_displayItemListOne.tpl:13
+#: templates/user/document/include_displayItemListMany.tpl:16
+#: templates/user/document/include_displayItemListOne.tpl:13
+msgid "Open quick view window"
+msgstr ""
+
+#: templates/admin/document/include_displayItemListMany.tpl:16
+#: templates/admin/document/include_displayItemListOne.tpl:13
+#: templates/user/document/include_displayItemListMany.tpl:16
+#: templates/user/document/include_displayItemListOne.tpl:13
+msgid "Quick view"
+msgstr ""
+
+#: templates/admin/document/view.tpl:4 templates/user/document/view.tpl.org:4
+msgid "Document list"
+msgstr ""
+
+#: templates/admin/document/view.tpl:12 templates/admin/document/edit.tpl:10
+msgid "Create document"
+msgstr ""
+
+#: templates/admin/document/view.tpl:21
+#: templates/user/document/view.tpl.org:15
+msgid "Back to paginated view"
+msgstr ""
+
+#: templates/admin/document/view.tpl:93 templates/user/document/view.tpl:46
+#: templates/user/document/view.tpl.org:99
+#: templates/mailz/itemlist_document_text.tpl:7
+#: templates/mailz/itemlist_document_html.tpl:11
+msgid "No documents found."
+msgstr ""
+
+#: templates/admin/document/view.tpl:105
+msgid "With selected documents"
+msgstr ""
+
+#: templates/admin/document/view.tpl:107
+msgid "Choose action"
+msgstr ""
+
+#: templates/admin/document/edit.tpl:7 templates/admin/document/edit.tpl:13
+msgid "Edit document"
+msgstr ""
+
+#: templates/admin/document/edit.tpl:34
+msgid "Enter the title of the document"
+msgstr ""
+
+#: templates/admin/document/edit.tpl:48
+msgid "Reset to empty value"
+msgstr ""
+
+#: templates/admin/document/edit.tpl:51
+msgid "Allowed file extensions:"
+msgstr ""
+
+#: templates/admin/document/edit.tpl:55
+msgid "Current file"
+msgstr ""
+
+#: templates/admin/document/edit.tpl:73 templates/admin/document/edit.tpl:75
+msgid "Enter the begindate of the document"
+msgstr ""
+
+#: templates/admin/document/edit.tpl:83 templates/admin/document/edit.tpl:85
+msgid "Enter the enddate of the document"
+msgstr ""
+
+#: templates/admin/document/edit.tpl:119
+msgid "Really delete this document?"
+msgstr ""
+
+#: templates/admin/document/delete.tpl:4
+msgid "Delete document"
+msgstr ""
+
+#: templates/admin/document/delete.tpl:11
+msgid "Do you really want to delete this document ?"
+msgstr ""
+
+#: templates/admin/document/delete.tpl:18
+msgid "Confirmation prompt"
+msgstr ""
+
+#: templates/admin/include_standardfields_edit.tpl:4
+#: templates/admin/include_standardfields_edit.tpl:9
+#: templates/admin/include_standardfields_display.tpl:4
+#: templates/admin/include_standardfields_display.tpl:7
+#: templates/user/include_standardfields_display.tpl:4
+#: templates/user/include_standardfields_display.tpl:7
+msgid "Creation and update"
+msgstr ""
+
+#: templates/admin/include_standardfields_edit.tpl:13
+#, php-format
+msgid "Created by %s"
+msgstr ""
+
+#: templates/admin/include_standardfields_edit.tpl:14
+#, php-format
+msgid "Created on %s"
+msgstr ""
+
+#: templates/admin/include_standardfields_edit.tpl:18
+#, php-format
+msgid "Updated by %s"
+msgstr ""
+
+#: templates/admin/include_standardfields_edit.tpl:19
+#, php-format
+msgid "Updated on %s"
+msgstr ""
+
+#: templates/admin/include_standardfields_display.tpl:11
+#: templates/user/include_standardfields_display.tpl:11
+msgid "Creation"
+msgstr ""
+
+#: templates/admin/include_standardfields_display.tpl:22
+#: templates/user/include_standardfields_display.tpl:22
+#, php-format
+msgid "Created by %1$s on %2$s"
+msgstr ""
+
+#: templates/admin/include_standardfields_display.tpl:25
+#: templates/user/include_standardfields_display.tpl:25
+msgid "Last update"
+msgstr ""
+
+#: templates/admin/include_standardfields_display.tpl:36
+#: templates/user/include_standardfields_display.tpl:36
+#, php-format
+msgid "Updated by %1$s on %2$s"
+msgstr ""
+
+#: templates/contenttype/item_edit.tpl:5
+#: templates/contenttype/itemlist_edit.tpl:4
+#: templates/block/itemlist_modify.tpl:3
+msgid "Object type"
+msgstr ""
+
+#: templates/contenttype/item_edit.tpl:8
+#: templates/contenttype/itemlist_edit.tpl:8
+msgid ""
+"If you change this please save the element once to reload the parameters "
+"below."
+msgstr ""
+
+#: templates/contenttype/item_edit.tpl:17
+msgid "Link to object"
+msgstr ""
+
+#: templates/contenttype/item_edit.tpl:19
+msgid "Embed object display"
+msgstr ""
+
+#: templates/contenttype/itemlist_document_display_description.tpl:5
+msgid "Read more"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:23
+#: templates/block/itemlist_modify.tpl:16
+msgid "Category"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:26
+#: templates/block/itemlist_modify.tpl:21
+msgid "Categories"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:31
+#: templates/block/itemlist_modify.tpl:29
+msgid "This is an optional filter."
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:39
+#: templates/block/itemlist_modify.tpl:36
+msgid "Sorting"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:43
+#: templates/block/itemlist_modify.tpl:38
+msgid "Random"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:46
+#: templates/block/itemlist_modify.tpl:39
+msgid "Newest"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:49
+#: templates/block/itemlist_modify.tpl:40
+msgid "Default"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:55
+#: templates/block/itemlist_modify.tpl:45
+msgid "Amount"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:61
+#: templates/block/itemlist_modify.tpl:50
+msgid "Template"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:71
+#: templates/block/itemlist_modify.tpl:61
+msgid "Example"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:75
+#: templates/block/itemlist_modify.tpl:65
+msgid "Filter (expert option)"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:78
+#: templates/block/itemlist_modify.tpl:67
+msgid "Syntax examples"
+msgstr ""
+
+#: templates/contenttype/itemlist_edit.tpl:78
+#: templates/block/itemlist_modify.tpl:67
+msgid "or"
+msgstr ""
+
+#: templates/user/document/display.tpl:11
+msgid "You are downloading following URL: "
+msgstr ""
+
+#: templates/user/document/display.tpl:12
+msgid "If your are not downloading the file please klick"
+msgstr ""
+
+#: templates/user/document/display.tpl:12
+msgid "here."
+msgstr ""
+
+#: templates/user/document/view.tpl:16
+msgid "No Dokument found!"
+msgstr ""
+
+#: templates/user/document/view.tpl.org:21
+msgid "Show all entries"
+msgstr ""
+
+#: templates/user/document/view.tpl.org:39
+msgid "State"
+msgstr ""
+
+#: templates/block/itemlist_modify.tpl:7
+msgid ""
+"If you change this please save the block once to reload the parameters below."
+msgstr ""

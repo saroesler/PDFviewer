@@ -1,0 +1,4 @@
+{* purpose of this template: documents display xml view in admin area *}
+{pdfviewerTemplateHeaders contentType='text/xml'}<?xml version="1.0" encoding="{charset}" ?>
+{getbaseurl assign='baseurl'}
+{include file='admin/document/include.xml' item=$document}

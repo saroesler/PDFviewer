@@ -1,0 +1,6 @@
+{* purpose of this template: documents view csv view in admin area *}
+{pdfviewerTemplateHeaders contentType='text/comma-separated-values; charset=iso-8859-15' asAttachment=true filename='Documents.csv'}
+"{gt text='Title'}";"{gt text='Datei'}";"{gt text='Begindate'}";"{gt text='Enddate'}";"{gt text='Workflow state'}"
+{foreach item='document' from=$items}
+    "{$document.title|replace:"\"":""}";"{$document.datei}";"{$document.begindate|dateformat:'datebrief'}";"{$document.enddate|dateformat:'datebrief'}";"{$item.workflowState|pdfviewerObjectState:false|lower}"
+{/foreach}

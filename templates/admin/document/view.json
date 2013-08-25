@@ -1,0 +1,8 @@
+{* purpose of this template: documents view json view in admin area *}
+{pdfviewerTemplateHeaders contentType='application/json'}
+[
+{foreach item='item' from=$items name='documents'}
+    {if not $smarty.foreach.documents.first},{/if}
+    {$item->toJson()}
+{/foreach}
+]

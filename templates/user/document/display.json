@@ -1,0 +1,3 @@
+{* purpose of this template: documents display json view in user area *}
+{pdfviewerTemplateHeaders contentType='application/json'}
+{$document->toJson()}

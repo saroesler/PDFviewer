@@ -1,0 +1,120 @@
+{* purpose of this template: documents view view in user area *}
+{include file='user/header.tpl'}
+<div class="pdfviewer-document pdfviewer-view">
+{gt text='Document list' assign='templateTitle'}
+{pagesetvar name='title' value=$templateTitle}
+<div class="z-frontendcontainer">
+    <h2>{$templateTitle}</h2>
+
+{assign var='own' value=0}
+{if isset($showOwnEntries) && $showOwnEntries eq 1}
+    {assign var='own' value=1}
+{/if}
+{assign var='all' value=0}
+{if isset($showAllEntries) && $showAllEntries eq 1}
+    {gt text='Back to paginated view' assign='linkTitle'}
+    <a href="{modurl modname='Pdfviewer' type='user' func='view' ot='document'}" title="{$linkTitle}" class="z-icon-es-view">
+        {$linkTitle}
+    </a>
+    {assign var='all' value=1}
+{else}
+    {gt text='Show all entries' assign='linkTitle'}
+    <a href="{modurl modname='Pdfviewer' type='user' func='view' ot='document' all=1}" title="{$linkTitle}" class="z-icon-es-view">{$linkTitle}</a>
+{/if}
+
+{include file='user/document/view_quickNav.tpl'}{* see template file for available options *}
+
+<table class="z-datatable">
+    <colgroup>
+        <col id="cworkflowstate" />
+        <col id="ctitle" />
+        <col id="cdatei" />
+        <col id="cbegindate" />
+        <col id="cenddate" />
+        <col id="citemactions" />
+    </colgroup>
+    <thead>
+    <tr>
+        <th id="hworkflowstate" scope="col" class="z-left">
+            {sortlink __linktext='State' currentsort=$sort modname='Pdfviewer' type='user' func='view' ot='document' sort='workflowState' sortdir=$sdir all=$all own=$own workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
+        </th>
+        <th id="htitle" scope="col" class="z-left">
+            {sortlink __linktext='Title' currentsort=$sort modname='Pdfviewer' type='user' func='view' ot='document' sort='title' sortdir=$sdir all=$all own=$own workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
+        </th>
+        <th id="hdatei" scope="col" class="z-left">
+            {sortlink __linktext='Datei' currentsort=$sort modname='Pdfviewer' type='user' func='view' ot='document' sort='datei' sortdir=$sdir all=$all own=$own workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
+        </th>
+        <th id="hbegindate" scope="col" class="z-left">
+            {sortlink __linktext='Begindate' currentsort=$sort modname='Pdfviewer' type='user' func='view' ot='document' sort='begindate' sortdir=$sdir all=$all own=$own workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
+        </th>
+        <th id="henddate" scope="col" class="z-left">
+            {sortlink __linktext='Enddate' currentsort=$sort modname='Pdfviewer' type='user' func='view' ot='document' sort='enddate' sortdir=$sdir all=$all own=$own workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
+        </th>
+        <th id="hitemactions" scope="col" class="z-right z-order-unsorted">{gt text='Actions'}</th>
+    </tr>
+    </thead>
+    <tbody>
+
+{foreach item='document' from=$items}
+    <tr class="{cycle values='z-odd, z-even'}">
+        <td headers="hworkflowstate" class="z-left z-nowrap">
+            {$document.workflowState|pdfviewerObjectState}
+        </td>
+        <td headers="htitle" class="z-left">
+            {$document.title|notifyfilters:'pdfviewer.filterhook.documents'}
+        </td>
+        <td headers="hdatei" class="z-left">
+              <a href="{$document.dateiFullPathURL}" title="{$document.title|replace:"\"":""}"{if $document.dateiMeta.isImage} rel="imageviewer[document]"{/if}>
+              {if $document.dateiMeta.isImage}
+                  {thumb image=$document.dateiFullPath objectid="document-`$document.id`" manager=$documentThumbManagerDatei tag=true img_alt=$document.title}
+              {else}
+                  {gt text='Download'} ({$document.dateiMeta.size|pdfviewerGetFileSize:$document.dateiFullPath:false:false})
+              {/if}
+              </a>
+        </td>
+        <td headers="hbegindate" class="z-left">
+            {$document.begindate|dateformat:'datebrief'}
+        </td>
+        <td headers="henddate" class="z-left">
+            {$document.enddate|dateformat:'datebrief'}
+        </td>
+        <td id="itemactions{$document.id}" headers="hitemactions" class="z-right z-nowrap z-w02">
+            {if count($document._actions) gt 0}
+                {foreach item='option' from=$document._actions}
+                    <a href="{$option.url.type|pdfviewerActionUrl:$option.url.func:$option.url.arguments}" title="{$option.linkTitle|safetext}"{if $option.icon eq 'preview'} target="_blank"{/if}>{icon type=$option.icon size='extrasmall' alt=$option.linkText|safetext}</a>
+                {/foreach}
+                {icon id="itemactions`$document.id`trigger" type='options' size='extrasmall' __alt='Actions' class='z-pointer z-hide'}
+                <script type="text/javascript">
+                /* <![CDATA[ */
+                    document.observe('dom:loaded', function() {
+                        pdfviInitItemActions('document', 'view', 'itemactions{{$document.id}}');
+                    });
+                /* ]]> */
+                </script>
+            {/if}
+        </td>
+    </tr>
+{foreachelse}
+    <tr class="z-datatableempty">
+      <td class="z-left" colspan="6">
+    {gt text='No documents found.'}
+      </td>
+    </tr>
+{/foreach}
+
+    </tbody>
+</table>
+
+{if !isset($showAllEntries) || $showAllEntries ne 1}
+    {pager rowcount=$pager.numitems limit=$pager.itemsperpage display='page'}
+{/if}
+
+
+{notifydisplayhooks eventname='pdfviewer.ui_hooks.documents.display_view' urlobject=$currentUrlObject assign='hooks'}
+{foreach key='providerArea' item='hook' from=$hooks}
+    {$hook}
+{/foreach}
+</div>
+</div>
+{include file='user/footer.tpl'}
+

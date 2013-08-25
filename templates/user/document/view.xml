@@ -1,0 +1,9 @@
+{* purpose of this template: documents view xml view in user area *}
+{pdfviewerTemplateHeaders contentType='text/xml'}<?xml version="1.0" encoding="{charset}" ?>
+<documents>
+{foreach item='item' from=$items}
+    {include file='user/document/include.xml'}
+{foreachelse}
+    <noDocument />
+{/foreach}
+</documents>

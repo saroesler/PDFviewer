@@ -1,0 +1,9 @@
+{* purpose of this template: documents xml inclusion template in admin area *}
+<document id="{$item.id}" createdon="{$item.createdDate|dateformat}" updatedon="{$item.updatedDate|dateformat}">
+    <id>{$item.id}</id>
+    <title><![CDATA[{$item.title}]]></title>
+    <datei{if $item.datei ne ''} extension="{$item.dateiMeta.extension}" size="{$item.dateiMeta.size}" isImage="{if $item.dateiMeta.isImage}true{else}false{/if}"{if $item.dateiMeta.isImage} width="{$item.dateiMeta.width}" height="{$item.dateiMeta.height}" format="{$item.dateiMeta.format}"{/if}{/if}>{$item.datei}</datei>
+    <begindate>{$item.begindate|dateformat:'datebrief'}</begindate>
+    <enddate>{$item.enddate|dateformat:'datebrief'}</enddate>
+    <workflowState>{$item.workflowState|pdfviewerObjectState:false|lower}</workflowState>
+</document>
